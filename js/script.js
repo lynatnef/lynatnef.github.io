@@ -99,7 +99,18 @@
                  $(this).addClass('active');
                  });
              });
-             
+	     /////////
+             function() {
+             var filterValue = $(this).attr('data-filter');
+             if (filterValue === '*') {
+             // Show all items
+             $container.isotope({ filter: '*' });
+             } else {
+             // Show filtered items
+             $container.isotope({ filter: filterValue });
+             }
+             }
+	     /////////
              // Filter items on button click
              $('.filter-button').click(function() {
              var filterValue = $(this).attr('data-filter');

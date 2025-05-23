@@ -23,6 +23,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <script src="js/bugfix.js"></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -144,7 +145,7 @@
           </div>
           <div class="projects-isotope">
             <div class="projects-flters d-flex flex-wrap justify-content-center my-5" >
-              <button class="filter-button border-0 bg-transparent me-5 mb-3 active" data-filter="*">All</button>
+              <button id="guh" class="filter-button border-0 bg-transparent me-5 mb-3 active" data-filter="*">All</button>
               <button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".density">Density</button>
               <button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".spoofer">Spoofer</button>
               <button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".bundles">Bundles</button>
